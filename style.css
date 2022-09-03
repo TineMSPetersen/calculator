@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -9,4 +10,51 @@
          url('highspeed.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    background-color: #B4B0A5;
+    padding: 20px;
+    width: 400px;
+    margin: 50px auto;
+}
+
+.screen {
+    background-color: black;
+    color: #03D543;
+    font-family: highspeed, sans-serif;
+    font-size: 30px;
+    height: 80px;
+    text-align: right;
+    display: grid;
+    align-content: center;
+    padding: 10px;
+    letter-spacing: 3px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px 0;
+    gap: 5px;
+}
+
+button {
+    background-color: #928E83;
+    border: 1px solid #514E48;
+    padding: 5px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #807c73;
+}
+
+#equal {
+    grid-column: 3 / 5;
 }
